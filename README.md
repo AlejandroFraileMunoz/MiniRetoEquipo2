@@ -12,11 +12,11 @@
 | Rubén Ortiz león             | Portavoz (Cambiante), Desarrollador             |
 | Alejandro Fraile Muñoz       | Desarrollador                                   |
 | Lara Hoyuela Solar           | Coordinador, Desarrollador                      |
-|  Sara Herrero González       | Secretario, Desarrollador                       |
+|  Sara Herrero González       | Desarrollador                                   |
 
 
 ## 🧭 Objetivo del Reto
-Desarrollar una aplicación de escritorio y un sitio web para la creación de juegos basicos.
+Este Mini Reto consiste en el diseño y desarrollo de una aplicación para la gestión de juegos básicos, incluyendo el almacenamiento de partidas y puntuaciones de los jugadores. El proyecto abarca desde el diseño de la base de datos hasta el desarrollo de aplicaciones y su documentación final para exposición y repositorio GitHub.
 
 
 ## 📌 Módulos y Entregables
@@ -51,6 +51,21 @@ Desarrollar una aplicación de escritorio y un sitio web para la creación de ju
 
 
 
+🛠️ Tecnologías utilizadas
+
+Lenguaje de programación: Java
+
+Base de datos: MySQL
+
+Desarrollo web: HTML5 y CSS3
+
+Entorno de desarrollo: NetBeans
+
+Control de versiones: GitHub y GitHub Desktop
+
+Sistemas operativos: Windows y Linux
+
+Virtualización: Máquinas virtuales
 
 
 
