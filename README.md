@@ -20,3 +20,42 @@ Desarrollar una aplicación de escritorio y un sitio web para la creación de ju
 
 
 ## 📌 Módulos y Entregables
+
+ **Bases de Datos**
+
+- [📄 Diagrama E/R]
+- [📄 Diagrama Relacional]
+
+
+### 💻 **Programación 
+
+
+
+
+
+### 🌐 **Lenguajes de Marcas **
+
+- [🌍 Página web (HTML + CSS)]
+
+
+
+
+### 🖧 **Sistemas Informáticos**
+
+- [🗂️ Máquina virtual]
+
+
+
+
+### 👩‍💻 **Entornos de Desarrollo (ED)**
+
+
+
+
+
+
+
+
+
+
+
