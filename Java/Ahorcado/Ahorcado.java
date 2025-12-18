@@ -4,69 +4,208 @@
 
 package com.mycompany.minireto;
 
+
+
 import java.util.Scanner;
 
 /**
  *
- * @author DAW120
+ * @author ossel
  */
 public class Ahorcado {
+    private static int errores = 0;
+    private static int conntadorerrores = 0;
 
-    public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
+   
+         public static void main(String[] args) {
+       
+        juego();
+        
+}
+        
+        public static void juego(){
+ Scanner entrada = new Scanner(System.in);
+
         
         boolean terminado = false;
         
        
         
         String[] palabras = {"PERRO"};
+        char[] guiones = new char[palabras[0].length()];
         
-        for(int i =  0; i < palabras[0].length(); i++){
-            System.out.print("_ ");
+        
+//        Arrays.fill(guiones,'_');
+        for(int i =  0; i < guiones.length; i++){
+            guiones[i] = '_';
         }
-        System.out.printf("\n");
+        System.out.println(guiones);
+        int vidas = 7;
+        int conntadorerrores = 0;
+        
         
          while(!terminado){
+              System.out.println("\nPalabra: " + mostrarPalabra(guiones));
+            System.out.println("Vidas: " + vidas);
+            
              
-             String[] letra = new String[palabras.length + 6];
-             int contadorletra = 0;
+             
          
         System.out.println("Introduce una letra: ");
-         letra[contadorletra] = entrada.next().toUpperCase().substring(0, 1);
+         char letra = entrada.nextLine().toUpperCase().charAt(0);
         
-        
+         boolean acierto = false;
         
         String[] letras = new String[palabras[0].length()];
         
          for(int i =  0; i < palabras[0].length(); i++){
            
-             if(i == palabras[0].length()){
-                 letras[i] = palabras[0].substring(i);
-             }else{
-                 letras[i] = palabras[0].substring(i, i + 1);
+             if(palabras[0].charAt(i) == letra){
+                guiones[i] = letra;
+                acierto = true;
              }
              
          }
+         
+         if(acierto){
+             System.out.println("Correcto");
+         }else{
+             vidas--;
+             errores++;
+             System.out.println("Incorrecto");
+             System.out.println("Te quedan "+ vidas +" vidas");
+             Imagen();
+             
+         }
         
-        boolean acierto = false;
-        
-        for(int i =  0; i < palabras[0].length(); i++){
-            if(letra[contadorletra].equalsIgnoreCase(letras[i])){
-                System.out.printf("%s ", letra );
-                acierto = true;
-            }else{
-                System.out.printf("_ ");
+        if (palabraCompleta(guiones)) {
+                System.out.println("\nHas ganado! La palabra era: " + palabras[0]);
+                terminado = true;
+                
             }
+
+                    
+         if (vidas == 0) {
+            System.out.println("\nHas perdido! La palabra era: " + palabras[0]);
+            terminado = true;
         }
-            System.out.print("\n");
-            int vidas = 6;
-        if(!acierto){
-            vidas--;
-            System.out.println("Te quedan "+ vidas +" vidas");
-        }
-            
         
-        }
+         }
+           
+            
+       
+            
+       
         
     }
-}
+               
+        
+         private static String mostrarPalabra(char[] palabra) {
+        String resultado = "";
+        for (char guiones : palabra) {
+            resultado += guiones + " ";
+        }
+        return resultado;
+    }
+    
+    public static boolean palabraCompleta(char[] palabra) {
+        for (char c : palabra) {
+            if (c == '_') {
+                return false;
+            }
+        }
+        return true;
+    }
+    public static void Imagen() {
+       
+		if (errores == 1) {
+			
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			System.out.println();
+			System.out.println("___|___");
+			System.out.println();
+		}
+		if (errores == 2) {
+			
+			System.out.println("   |");
+			System.out.println("   |");
+			System.out.println("   |");
+			System.out.println("   |");
+			System.out.println("   |");
+			System.out.println("   |");
+			System.out.println("   |");
+			System.out.println("___|___");
+		}
+		if (errores == 3) {
+			
+			System.out.println("   ____________");
+			System.out.println("   |");
+			System.out.println("   |");
+			System.out.println("   |");
+			System.out.println("   |");
+			System.out.println("   |");
+			System.out.println("   |");
+			System.out.println("   | ");
+			System.out.println("___|___");
+		}
+		if (errores == 4) {
+			
+			System.out.println("   ____________");
+			System.out.println("   |          _|_");
+			System.out.println("   |         /   \\");
+			System.out.println("   |        |     |");
+			System.out.println("   |         \\_ _/");
+			System.out.println("   |");
+			System.out.println("   |");
+			System.out.println("   |");
+			System.out.println("___|___");
+		}
+		if (errores == 5) {
+			
+			System.out.println("   ____________");
+			System.out.println("   |          _|_");
+			System.out.println("   |         /   \\");
+			System.out.println("   |        |     |");
+			System.out.println("   |         \\_ _/");
+			System.out.println("   |           |");
+			System.out.println("   |           |");
+			System.out.println("   |");
+			System.out.println("___|___");
+		}
+		if (errores == 6) {
+			
+			System.out.println("   ____________");
+			System.out.println("   |          _|_");
+			System.out.println("   |         /   \\");
+			System.out.println("   |        |     |");
+			System.out.println("   |         \\_ _/");
+			System.out.println("   |           |");
+			System.out.println("   |           |");
+			System.out.println("   |          / \\ ");
+			System.out.println("___|___      /   \\");
+		}
+		if (errores == 7) {
+			System.out.println("Fin de la partida");
+			System.out.println("   ____________");
+			System.out.println("   |          _|_");
+			System.out.println("   |         /   \\");
+			System.out.println("   |        |     |");
+			System.out.println("   |         \\_ _/");
+			System.out.println("   |          _|_");
+			System.out.println("   |         / | \\");
+			System.out.println("   |          / \\ ");
+			System.out.println("___|___      /   \\");
+			
+		}
+	}
+       
+    }
+
+
+
+   
+
+    
+
