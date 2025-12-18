@@ -21,10 +21,15 @@ Este Mini Reto consiste en el diseño y desarrollo de una aplicación para la ge
 
 ## 📌 Módulos y Entregables
 
- **Bases de Datos**
+🗄️ Bases de Datos (BD)
 
-- [📄 Diagrama E/R]
-- [📄 Diagrama Relacional]
+Objetivo: Diseñar e implementar la base de datos para la gestión de juegos y partidas.
+
+Entregables:
+
+Diagrama Entidad/Relación (E/R).
+
+Diagrama relacional de la base de datos.
 
 
 ### 💻 **Programación 
@@ -33,22 +38,31 @@ Este Mini Reto consiste en el diseño y desarrollo de una aplicación para la ge
 
 
 
-### 🌐 **Lenguajes de Marcas **
+🌐 Lenguajes de Marcas y Sistemas de Gestión de la Información (LMSGI)
 
-- [🌍 Página web (HTML + CSS)]
+Objetivo: Crear una web estática que explique los juegos y muestre información relevante.
+
+Entregables:
+
+Sitio web desarrollado con HTML y CSS.
 
 
 
+💻 Sistemas Informáticos (SI)
 
-### 🖧 **Sistemas Informáticos**
+Objetivo: Comprobar el funcionamiento real del proyecto en entornos virtualizados.
 
 - [🗂️ Máquina virtual]
 
 
 
+🛠️ Entornos de Desarrollo (ED)
 
-### 👩‍💻 **Entornos de Desarrollo (ED)**
+Objetivo: Gestionar correctamente el proyecto utilizando herramientas de desarrollo y control de versiones.
 
+Entregables:
+
+Uso de GitHub Desktop y NetBeans.
 
 
 🛠️ Tecnologías utilizadas
