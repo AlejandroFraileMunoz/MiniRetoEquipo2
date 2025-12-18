@@ -6,6 +6,7 @@ package com.mycompany.minireto;
 
 
 
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -14,7 +15,7 @@ import java.util.Scanner;
  */
 public class Ahorcado {
     private static int errores = 0;
-    private static int conntadorerrores = 0;
+   
 
    
          public static void main(String[] args) {
@@ -25,14 +26,15 @@ public class Ahorcado {
         
         public static void juego(){
  Scanner entrada = new Scanner(System.in);
-
+Random r = new Random();
         
         boolean terminado = false;
         
        
         
-        String[] palabras = {"PERRO"};
-        char[] guiones = new char[palabras[0].length()];
+        String[] palabras = {"PERRO","ANUAL","DESPERTAR","TEMPORAL","FELPA","AUDACIA","ARENA","ADOPTANTE","REAL","TRAGICO","HABILIDADES","CONSEJO","FICCION","MAS","COMPARAR","ATERRADOR","VIRGEN","AMIGO","REVISTA","CONEJO","AGUDA","MATADERO","TRES","BERREA","GRANJERO","DESPRECIO","APRESURADO","CURAR","GIGANTESCO","VARIAR","SENTIDO","INCLUIR","PERMANECER","CENA","DEPENDER","COLECCION","BUZON","CENTAURO","DIBOLATRIA","PRESENTACION","SEDOSO","EQUITATIVA","INGRESOS","CONFUSO","TONTO","FORMAL","SOLEDAD","PAN","CIELO","MIRADA","ESCRIBIR","CEDENTE","COMIDA","ABANDONADO","CENTRO","SOBORNO","PROCEDIMIENTO","EXHIBICION","NOMADA","PANA","CALCULADORA","NACIONAL","EVANESCENTE","ASOCIADO","PROPORCION","JOROBA","EDITOR","IMITAR","LADRON","LLUVIA","BAR","ASTUTO","CANTIDAD","FERROCARRIL","NEUMATICO"};
+       String palabrafinal = palabras[r.nextInt(palabras.length)];
+        char[] guiones = new char[palabrafinal.length()];
         
         
 //        Arrays.fill(guiones,'_');
@@ -41,7 +43,7 @@ public class Ahorcado {
         }
         System.out.println(guiones);
         int vidas = 7;
-        int conntadorerrores = 0;
+        
         
         
          while(!terminado){
@@ -56,11 +58,11 @@ public class Ahorcado {
         
          boolean acierto = false;
         
-        String[] letras = new String[palabras[0].length()];
+      
         
-         for(int i =  0; i < palabras[0].length(); i++){
+         for(int i =  0; i < palabrafinal.length(); i++){
            
-             if(palabras[0].charAt(i) == letra){
+             if(palabrafinal.charAt(i) == letra){
                 guiones[i] = letra;
                 acierto = true;
              }
@@ -79,14 +81,14 @@ public class Ahorcado {
          }
         
         if (palabraCompleta(guiones)) {
-                System.out.println("\nHas ganado! La palabra era: " + palabras[0]);
+                System.out.println("\nHas ganado! La palabra era: " + palabrafinal);
                 terminado = true;
                 
             }
 
                     
          if (vidas == 0) {
-            System.out.println("\nHas perdido! La palabra era: " + palabras[0]);
+            System.out.println("\nHas perdido! La palabra era: " + palabrafinal);
             terminado = true;
         }
         
