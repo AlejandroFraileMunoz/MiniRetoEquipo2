@@ -25,7 +25,7 @@ Este Mini Reto consiste en el diseño y desarrollo de una aplicación para la ge
 
 Objetivo: Diseñar e implementar la base de datos para la gestión de juegos y partidas. 
 
-Entregables: 
+Entrega: 
 
 Diagrama Entidad/Relación (E/R). 
 
@@ -53,6 +53,8 @@ Sitio web desarrollado con HTML y CSS.
 💻 Sistemas Informáticos (SI) 
 
 Objetivo: Comprobar el funcionamiento real del proyecto en entornos virtualizados. 
+
+Entrega:
 
 [🗂️ Máquina virtual] 
 
