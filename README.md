@@ -34,6 +34,12 @@ Diagrama relacional de la base de datos.
 
 ### 💻 **Programación 
 
+Objetivo: Implementacion de codigo para la creacion de juegos.
+
+Entrega:
+
+Desarrollo de juegos en Java
+Uso de arrays y arrays bidimensionales
 
 
 
@@ -42,7 +48,7 @@ Diagrama relacional de la base de datos.
 
 Objetivo: Crear una web estática que explique los juegos y muestre información relevante.
 
-Entregables:
+Entrega:
 
 Sitio web desarrollado con HTML y CSS.
 
@@ -53,6 +59,9 @@ Sitio web desarrollado con HTML y CSS.
 Objetivo: Comprobar el funcionamiento real del proyecto en entornos virtualizados.
 
 - [🗂️ Máquina virtual]
+- Instalación de software necesario
+- Pruebas de funcionamiento en Windows y Linux
+- Documentación del proceso
 
 
 
@@ -60,7 +69,7 @@ Objetivo: Comprobar el funcionamiento real del proyecto en entornos virtualizado
 
 Objetivo: Gestionar correctamente el proyecto utilizando herramientas de desarrollo y control de versiones.
 
-Entregables:
+Entrega:
 
 Uso de GitHub Desktop y NetBeans.
 
@@ -82,7 +91,9 @@ Sistemas operativos: Windows y Linux
 Virtualización: Máquinas virtuales
 
 
+📖 Bibliografía y webgrafía
 
+Apuntes del curso DAW1
 
 
 
