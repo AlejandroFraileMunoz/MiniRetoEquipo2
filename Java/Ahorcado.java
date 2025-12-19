@@ -84,12 +84,14 @@ public class Ahorcado {
             if (palabraCompleta(guiones)) {// comprueba si tienes la palabra completa
                 System.out.println("\nHas ganado! La palabra era: " + palabrafinal);
                 terminado = true;
+                errores = 0;
 
             }
 
             if (vidas == 0) {
                 System.out.println("\nHas perdido! La palabra era: " + palabrafinal);
                 terminado = true;
+                errores = 0;
             }
 
         }
