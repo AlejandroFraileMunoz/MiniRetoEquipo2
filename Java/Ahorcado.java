@@ -136,11 +136,15 @@ public class Ahorcado {
             System.out.println("   |");
             System.out.println("   |");
             System.out.println("   |");
+            System.out.println("   |");
+            System.out.println("   |");
             System.out.println("___|___");
         }
         if (errores == 3) {
 
             System.out.println("   ____________");
+            System.out.println("   |");
+            System.out.println("   |");
             System.out.println("   |");
             System.out.println("   |");
             System.out.println("   |");
@@ -160,6 +164,8 @@ public class Ahorcado {
             System.out.println("   |");
             System.out.println("   |");
             System.out.println("   |");
+            System.out.println("   |");
+            System.out.println("   |");
             System.out.println("___|___");
         }
         if (errores == 5) {
@@ -171,6 +177,8 @@ public class Ahorcado {
             System.out.println("   |         \\_ _/");
             System.out.println("   |           |");
             System.out.println("   |           |");
+            System.out.println("   |");
+            System.out.println("   |");
             System.out.println("   |");
             System.out.println("___|___");
         }
@@ -184,7 +192,9 @@ public class Ahorcado {
             System.out.println("   |           |");
             System.out.println("   |           |");
             System.out.println("   |          / \\ ");
-            System.out.println("___|___      /   \\");
+            System.out.println("   |         /   \\");
+            System.out.println("   |");
+            System.out.println("___|___  ");
         }
         if (errores == 7) {
             System.out.println("Fin de la partida");
@@ -196,7 +206,9 @@ public class Ahorcado {
             System.out.println("   |          _|_");
             System.out.println("   |         / | \\");
             System.out.println("   |          / \\ ");
-            System.out.println("___|___      /   \\");
+            System.out.println("   |         /   \\");
+            System.out.println("   |");
+            System.out.println("___|___  ");
 
         }
     }
