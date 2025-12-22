@@ -1,0 +1,147 @@
+/* ========================================================================= */
+                        /* --- 1. ESTILOS DE LETRA --- */
+/* ========================================================================= */
+
+
+
+/* ========================================================================= */
+                        /* --- 2. ESTILOS PARA EL HEADER --- */
+/* ========================================================================= */
+
+
+
+#cabecera {
+display: flex;
+justify-content: center;
+height: 150px;
+background-image: url(imagen_fondo.jpg);
+font: bold 18px Arial, sans-serif;
+color: #000000;
+text-decoration: none
+}
+
+#cabecera {
+font: bold 30px Arial, sans-serif;
+color: #ffffff;
+text-decoration: none;
+} 
+
+
+#menucabecera {
+display: flex;
+justify-content: center;
+height: 50px;
+background-color: #a13d91;
+border-top: 5px solid #000000;
+border-bottom: 5px solid #000000;
+
+}
+
+
+#menucabecera a {
+font: bold 18px Arial, sans-serif;
+color: #ffffff;
+text-decoration: none;
+} 
+
+#menucabecera a:hover {
+    color: rgb(255, 0, 191);
+    text-decoration: underline;
+}
+
+
+#cuerpo {
+    background-image: url(fondopagina.jpg);
+}
+
+
+
+#contenedor_principal{
+font: bold 15px Arial, sans-serif;
+color: #ffffff;
+text-decoration: none;
+}
+
+
+#enlaces{
+font: bold 15px Arial, sans-serif;
+color: #ffffff;
+text-decoration: none;
+}
+
+#enlaces a{
+font: bold 15px Arial, sans-serif;
+color: #ffffff;
+text-decoration: none;
+}
+
+#enlaces a:hover {
+    color: rgb(255, 0, 191);
+    text-decoration: underline;
+}
+
+
+#tablapadre{
+  display: flex;
+  flex-direction: column;
+  position: absolute;       
+  right: 20px;              
+  top: 300px;               
+                  
+}
+
+#divtabla{
+display:flex
+}
+
+
+#tabla {
+width: 230px;
+padding: 20px;
+background-image: url(ranking.jpg);
+border-radius: 10px;
+}
+
+#tabla{
+font: bold 15px Arial, sans-serif;
+color: #ffffff;
+text-decoration: none;
+}
+
+
+#juegopadre{
+display:flex
+}
+
+#juegopadre a{
+font: bold 15px Arial, sans-serif;
+color: #ffffff;
+text-decoration: none;
+}
+
+#juegopadre a:hover {
+    color: rgb(255, 0, 191);
+    text-decoration: underline;
+}
+
+#juego1{
+width: 150px;
+padding: 15px;
+background-image: url(ranking.jpg);
+border-radius: 30px;
+}
+
+
+#pie {
+display: flex;
+justify-content: center;
+width: 96%;
+padding: 2%;
+background-color: #a00f99;
+}
+
+#pie{
+font: bold 15px Arial, sans-serif;
+color: #ffffff;
+text-decoration: none; 
+}

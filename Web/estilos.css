@@ -1,0 +1,465 @@
+/* ========================================================================= */
+                        /* --- 1. ESTILOS DE LETRA --- */
+/* ========================================================================= */
+@font-face {
+    font-family: "Minecraft";
+    src: url("./Minecraft.ttf");
+}
+
+@font-face {
+    font-family: "titulo_clasico";
+    src: url("./titulo_clasico.otf");
+}
+
+@font-face {
+    font-family: "Letra_general";
+    src: url("./letra_general.ttf");
+}
+
+@font-face {
+    font-family: "Menu";
+    src: url("./cabecera.otf");
+}
+
+@font-face {
+    font-family: "letter_links";
+    src: url(./letter_links.otf);
+}
+
+
+/* ========================================================================= */
+                        /* --- 2. ESTILOS PARA LA CABECERA --- */
+/* ========================================================================= */
+
+/**{
+    box-sizing: border-box; Obliga a que si dices que algo mide 100%, los paddings se queden dentro, no fuera.
+    padding: 0; Limpia los márgenes que traen por defecto el body, ul, h1, etc.
+    
+}*/
+
+#cabecera {
+    display: flex;
+    justify-content: center; /* centra horizontalmente */
+    align-items: flex-start; /* alinea el contenido arriba */
+    height: 150px;
+    background-image: 
+    linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)
+    ),
+    url("imagen_fondo.jpg");
+    background-size: cover;
+    background-position: center 59%;
+    color: #000000;
+    text-decoration: none
+}
+
+.titulo_principal{
+    display: flex; 
+    padding-top: 20px;  
+    font-family: "Minecraft";
+    color: #813172;
+    font-size: 85px;
+    margin: 0;
+}
+
+/* ========================================================================= */
+                        /* --- 3. ESTILOS PARA EL MENÚ --- */
+/* ========================================================================= */
+
+#menucabecera {
+    font-family: "Menu";
+    font-size: 50px;
+    text-align: center;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    height: 50px;
+    background-color: #a13d91;
+    border-top: 5px solid #000000;
+    border-bottom: 5px solid #000000;
+}
+
+#menucabecera a {
+    font: bold;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    margin: 0px;
+    border-radius: 5px;
+    padding: 2px 15px 5px 15px;
+    transition: background-color 0.5s ease, border-radius 0.3s ease, transform 0.3s ease;
+} 
+
+#menucabecera a:hover {
+    transform: scale(1.1);/* zoom */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7); /* Oscurecemos el color de la sombra */
+    background-color: rgba(228, 212, 224, 0.475); /* Fondo blanco semi-transparente al pasar el ratón */
+    border-radius: 10px; /* Redondeamos más las esquinas al pasar el ratón */
+    color: rgb(255, 0, 191);
+    
+}
+
+.separacion_menu{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000000;
+    font-size: 50px;
+    margin-top: 17px;
+}
+
+
+/* ========================================================================= */
+                        /* --- 4. ESTILOS PARA EL BODY --- */
+/* ========================================================================= */
+
+#main_juegos{
+    padding-top: 20px;
+}
+
+
+#cuerpo {
+    background-image: url(fondopagina.jpg);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Esto corta cualquier desbordamiento que cause la barra abajo */
+    flex-direction: row;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+p{
+    font-family: "letra_general";
+    color:white;
+    font-size: 35px;
+    text-align: center;
+    line-height: 0.2;
+}
+
+/* ========================================================================= */
+                        /* --- 5. ESTILOS PARA EL CONTENEDOR PRINCIPAL --- */
+/* ========================================================================= */
+
+.titulo_presentacion{
+    font-family: "titulo_clasico";
+    color:#5aeb98;
+    font-size: 50px;
+    text-align: center;
+}
+
+.juegos_disponibles{
+    font-family: "titulo_clasico";
+    color:#5aeb98;
+    font-size: 50px;
+    text-align: center;
+}
+
+#contenedor_principal {
+    display: flex;
+    justify-content: flex-start; /* Alinea todo a la izquierda */
+    align-items: flex-start; /* alineados arriba */
+    gap: 0px;/* espacio entre la barra lateral y los juegos */
+    width: 100%;  
+    box-sizing: border-box; /* el padding no "empuja" la web hacia afuera */
+}
+.titulo_tercero{
+    font-family: "titulo_clasico";
+    color:#5aeb98;
+    font-size: 40px;
+    text-align: center;
+}
+
+.titulo_reglas{
+    font-family: "titulo_clasico";
+    color:#5aeb98;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0px;
+}
+
+
+/* Aside */
+#menu_lateral {
+   
+    
+    display: flex;
+    flex-direction: column; /*PONE TODO EL CONTENIDO EN COLUMNA*/
+    
+}
+
+#menu_lateral a:hover {
+    color: rgb(255, 0, 191);
+    text-decoration: none;
+}
+
+
+
+/* Contenido principal */
+#contenido_principal{
+    flex: 1;   /* el centro crezca y ocupe todo el espacio sobrante */
+    display: flex;
+    padding-left: 20px;
+    margin-left: 20px;
+    border-left: 20px;
+
+    flex-direction: column;
+    align-items: center; /* Centra los títulos y el juegopadre */
+}
+
+#contenido_principal_juegos{
+    flex: 1;   /* el centro crezca y ocupe todo el espacio sobrante */
+    display: flex;
+    padding-left: 20px;
+    margin-left: 20px;
+    border-left: 20px;
+
+    flex-direction: column;
+    align-items: center; /* Centra los títulos y el juegopadre */
+}
+
+
+.lista_reglas{
+    font-family: "Letra_general";
+    font-size: 28px;
+    color: #afd2dd;
+    padding: 0px;
+
+
+}
+#juegopadre{
+    display:flex;
+    padding-left:60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-left: 50px;
+    flex-wrap: nowrap; /* Esto prohíbe que las tarjetas bajen a otra fila */
+    justify-content: flex-start; /* Esto las pega a la izquierda */
+    gap: 25px;
+    width: 100%; /* Asegura que use todo el ancho del centro */
+    overflow-x: auto; /* Si la pantalla es muy pequeña, permitirá hacer scroll lateral en lugar de romperse */
+}
+
+#juegopadre a{
+    font: bold 18px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#juegopadre a:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7); /* Oscurecemos el color de la sombra */
+    background-color: rgba(228, 212, 224, 0.475); /* Fondo blanco semi-transparente al pasar el ratón */
+    border-radius: 10px; /* Redondeamos más las esquinas al pasar el ratón */
+    color: rgb(255, 0, 191);
+}
+
+.tarjeta{
+    width: 350px;
+    height: 450px;
+    flex-shrink: 0; /* Esto evita que el navegador las "aplane" para que quepan */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px;
+    border-radius: 25px;
+
+    background-image: url(ranking.jpg);
+    background-size: cover;
+    background-position: center;
+
+    transition: 
+        transform 0.4s ease,
+        box-shadow 0.4s ease,
+        background-color 0.4s ease;
+}
+
+.tarjeta img {
+    width: 250px;
+    height: 290px;
+    object-fit: contain;
+}
+
+.tarjeta a{
+    font-family: "Menu";
+    font-size: 70px;
+}
+
+.tarjeta:hover {
+    transform: scale(1.1); /* zoom */
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.6);
+    background-color: rgba(228, 212, 224, 0.7);
+}
+
+.tarjeta:hover a {
+    color: rgb(255, 0, 191);
+}
+
+.reglas{
+    width: 350px;
+    height: 450px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 50px;
+    border-radius: 25px;
+
+    background-image: 
+    linear-gradient(rgba(68, 65, 73, 0.4), rgba(27, 22, 22, 0.4)
+    ), url(./fondo_reglas.jpg);
+
+    background-size: cover;
+    background-position: center;
+}
+
+iframe {
+    width: 100%; /* Opcional: para hacerlo responsive */
+    height: 500px; /* Altura que quieras */
+    border: 1px solid #ccc; /* Puedes poner `border: none;` para quitarlo */
+    display: block; /* Para mejor manejo de espacio */
+    margin: 20px auto; /* Centrarlo */
+}
+
+.contenedor_pdf {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Para que el borde encierre el iframe */
+  width: 90%;
+  max-width: 800px; /* Limita el ancho máximo */
+  margin: 20px auto; /* Centra el contenedor */
+  background-color: #f9f9f9;
+}
+
+.pdf-iframe {
+  width: 100%; /* Se adapta al ancho del contenedor */
+  height: 500px; /* Altura fija o puedes usar % */
+  display: block; /* Elimina espacio extra debajo */
+  border: none; /* Sin borde extra */
+}
+
+.pdf-object {
+  width: 100%;
+  height: 600px;
+  display: block;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+}
+
+/* ========================================================================= */
+                        /* --- 6. ESTILOS PARA LAS TABLAS --- */
+/* ========================================================================= */
+
+#tablapadre{
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /*ESPACIO ENTRE TABLAS*/ 
+    width:100%;/* Que ocupen todo el ancho del aside */                            
+}
+
+#tabla1,#tabla2 {
+    width: 90%; /* Ajusta según veas el margen */
+    margin: 0 auto; /* Centra las tablas dentro del aside */
+    padding: 20px;
+    background-image: url(ranking.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.3); /*LA SECCIÓN DE LA TABLA PAREZCA UNA TARJETA*/
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse; /* quita doble borde */
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.253); /* fondo semitransparente */
+    border-radius: 10px;
+    overflow: hidden;
+}   
+
+/* ESTILO DEL TITULO DE LA TABLA*/
+caption {
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #5aeb98;
+}
+
+/* Encabezado */
+thead {
+    background-color: #15f0de53;
+    color: rgb(255, 255, 255);
+}
+
+th {
+    padding: 10px;
+    font-size: 16px;
+    border-bottom: 2px solid #000000;
+}
+
+/* Celdas */
+td {
+    padding: 8px;
+    font-size: 15px;
+    border-bottom: 1px solid #000000;
+}
+
+
+
+/* ========================================================================= */
+                        /* --- 7. ESTILOS PARA LOS ENLACES DE INTERÉS --- */
+/* ========================================================================= */
+
+
+.links a{
+    font-family: "Letra_general";
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.links{
+    color: #a286f6;
+    font-size: 30px;
+    font-family: "letter_links";
+    text-decoration: none;
+}
+
+
+
+/* ========================================================================= */
+                        /* --- 8. ESTILOS PARA EL PIE DE PÁGINA --- */
+/* ========================================================================= */
+
+#pie {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px 0;
+    background-color: #a00f99;
+    margin: 0;
+}
+
+.pie_pagina{
+    font-family:"Minecraft";
+    color:aquamarine    
+}
+
+#reglas{
+    font-family: 'Courier New', Courier, monospace;
+    color: aquamarine;
+}
+
+.copy{
+    display: flex; 
+    flex: 1; 
+}
+
+.firma{
+    display: flex; 
+    flex: 1; 
+}
