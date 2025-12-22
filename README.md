@@ -95,7 +95,8 @@ Virtualización: Máquinas virtuales
 
 Apuntes del curso DAW1 
 
- 
+ Agradecimientos:
+ Equipo 1 y equipo 3
 
 
 
